@@ -13,6 +13,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme
       - name: Sphinx build
         run: |
+          conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
           conda activate coderefinery
           sphinx-build doc _build
       - name: Deploy
