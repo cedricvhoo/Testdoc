@@ -13,7 +13,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme
       - name: Sphinx build
         run: |
-          conda init bash
+          conda init powershell
           conda activate coderefinery
           sphinx-build doc _build
       - name: Deploy
