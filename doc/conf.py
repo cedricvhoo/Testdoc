@@ -13,12 +13,12 @@ release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-#import os
-#import sys
+import os
+import sys
 
-#sys.path.insert(0, os.path.abspath("../"))
+sys.path.insert(0, os.path.abspath("../"))
 
-extensions = ['myst_parser'] #, 'sphinx.ext.mathjax', 'sphinx.ext.autodoc']
+extensions = ['myst_parser', 'sphinx.ext.mathjax', 'sphinx.ext.autodoc']
 
 source_suffix = ['.rst', '.md']
 
