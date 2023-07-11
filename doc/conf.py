@@ -18,7 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath("../"))
 
-extensions = ['sphinx.ext.mathjax', 'sphinx.ext.autodoc']
+extensions = ['myst_parser', 'sphinx.ext.mathjax', 'sphinx.ext.autodoc']
 
 source_suffix = ['.rst', '.md']
 
